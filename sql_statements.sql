@@ -8,10 +8,10 @@ CREATE TABLE account(
 CREATE TABLE persoon(
     
     persoon_id INT NOT NULL AUTO_INCREMENT,
-    first_name varchar(255),
+    first_name varchar(255) NOT NULL,
     insertion varchar(255),
-    lastname varchar(255),
-    username varchar(255),
+    lastname varchar(255) NOT NULL,
+    username varchar(255) NOT NULL,
     account_id INT NOT NULL,
     
     PRIMARY KEY (persoon_id),
