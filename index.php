@@ -2,31 +2,6 @@
 
 
 
-//random TEST wachtwoord en naam
-
-if(isset($_POST['user_name']) && isset($_POST['password'])){
-
-  $username = $_POST['user_name'];
-
-  $password = $_POST['password'];
-
-  if($username == "qaher" && $password == "saberi"){
-    echo "logged in";
-  }
-
-  else{
-    echo "invalid username or password";
-  }
-
-}
-
-else{
-  echo "";
-}
-
-
-
-
 ?>
 
 
@@ -44,12 +19,12 @@ else{
 
       <label for="user_name">Username:</label>
       <br>
-      <input type="text" name="user_name" placeholder="Username" maxlength="20">
+      <input type="text" name="user_name" placeholder="Username" maxlength="20" required>
       <br><br>
 
       <label for="password">Password:</label>
       <br>
-      <input type="password" name="password" placeholder="password" maxlength="20">
+      <input type="password" name="password" placeholder="password" maxlength="20" required>
       <br><br>
 
       <button type="submit" name="login">Login</button>
